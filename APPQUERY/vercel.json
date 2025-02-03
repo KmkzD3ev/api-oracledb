@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/execute-query.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/execute-query", "dest": "/api/execute-query.js" }
+  ]
+}
