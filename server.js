@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const executeQuery = require('./api/execute-query'); // Importa a API correta
+const executeQuery = require('./api/execute-query'); 
 
-// ✅ Corrigindo a rota para evitar erro 404
+
 app.get('/', (req, res) => {
     res.send('🚀 API está rodando! Acesse <a href="/api/execute-query">/api/execute-query</a> para consultar os dados.');
 });
